@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная — Меридиан-Сервис</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-space"></div>
+    <header>
+        <div class="container h-100">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class=" d-flex align-items-center gap-3">
+                    <button class="show-header-button btn">
+                        <img src="images/icons/menu-02.svg" alt="">
+                    </button>
+                    <a href="index.html" class="header-logo d-flex align-items-center">
+                        <img src="images/header-logo.png" />
+                        <h6>МЕРИДИАН
+                            <br>
+                            СЕРВИС
+                        </h6>
+                    </a>
+                </div>
+                <div class="d-none d-xl-block">
+                    <b>Call-центр</b>
+                    <a href="tel:8(3452)500-614" class="header-phone">8(3452)500-614</a>
+                </div>
+                <div class="d-none d-xl-block">
+                    <b>Аварийно-диспетчерская служба</b>
+                    <a href="tel:8(3452)500-614" class="header-phone">8(3452)500-614</a>
+                </div>
+                <div class="d-none d-xl-block">
+                    <button class="btn btn-light">
+                        <img src="images/icons/face-wink.svg" alt="">
+                        Войти в личный кабинет
+                    </button>
+                </div>
+                <div class="d-block d-xl-none">
+                    <button class="btn btn-light">
+                        <img src="images/icons/face-wink.svg" alt="">
+                        Войти
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu py-4 d-flex align-items-md-center">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="index.html">
+                    <img class="w-50 w-sm-auto" style="max-width: 300px;" src="images/header-menu-logo.png" alt="">
+                </a>
+                <button class="hide-header-button btn btn-primary">
+                    <img src="images/icons/hide-menu.svg" alt="">
+                    Свернуть
+                </button>
+            </div>
+
+            <div class="row mt-4 pt-4">
+                <div class="col-12 col-md-6 mt-4">
+                    <a href="#" class="header-menu__link">
+                        <img src="images/icons/user-01.svg" alt="">
+                        <span>Личный кабинет</span>
+                    </a>
+                    <a href="useful.html" class="header-menu__link mt-4">
+                        <img src="images/icons/info-circle.svg" alt="">
+                        <span>Полезная информация</span>
+                    </a>
+                    <a href="contacts.html" class="header-menu__link mt-4">
+                        <img src="images/icons/phone-01.svg" alt="">
+                        <span>Контакты и график работы</span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 mt-4">
+                    <a href="feedback.html" class="header-menu__link">
+                        <img src="images/icons/share-05.svg" alt="">
+                        <span>Обращение на подключение дома</span>
+                    </a>
+                    <a href="homes.html" class="header-menu__link mt-4">
+                        <img src="images/icons/cube-01.svg" alt="">
+                        <span>Наши дома</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mt-4">
+                <div class="mt-4">
+                    <b class="mt-md-4 d-block">Call-центр:</b>
+                    <a href="tel:8(3452)500-614" class="header-phone">8(3452)500-614</a>
+                </div>
+                <div class="mt-4">
+                    <b class="mt-md-4 d-block">Аварийно-диспетчерская служба:</b>
+                    <a href="tel:8(3452)500-614" class="header-phone">8(3452)500-614</a>
+                </div>
+                <div class="mt-4">
+                    <b class="mt-md-4 d-block">Центральный офис:</b>
+                    <p class="mb-0">Адрес: г. Тюмень, ул. Муравленко, д. 5</p>
+                </div>
+                <div class="mt-4">
+                    <b class="mt-md-4 d-block">Е-mail:</b>
+                    <a href="mailto:meridian_cervis@mail.ru" class="header-phone">meridian_cervis@mail.ru</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Useful -->
+    <div class="overflow-hidden">
+        <section class="container">
+            <h4>Полезные статьи</h4>
+
+            <div class="articles-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="useful-item">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                        <div class="useful-item mt-4">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="useful-item">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                        <div class="useful-item mt-4">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="useful-item">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                        <div class="useful-item mt-4">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="useful-item">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                        <div class="useful-item mt-4">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articles-swiper__prev">
+                    <img src="images/icons/chevron-right.svg" alt="">
+                </div>
+
+                <div class="articles-swiper__next">
+                    <img src="images/icons/chevron-right.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="overflow-hidden">
+        <section class="container">
+            <h4>Новости</h4>
+
+            <div class="news-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="useful-item">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                        <div class="useful-item mt-4">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="useful-item">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                        <div class="useful-item mt-4">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="useful-item">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                        <div class="useful-item mt-4">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="useful-item">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                        <div class="useful-item mt-4">
+                            <img class="useful-item__bg" src="images/useful-item.png" />
+                            <div class="useful-item__gradient"></div>
+                            <h5 class="useful-item__title mb-0">Описание процесса обраб...</h5>
+                            <p class="useful-item__subtitle mb-0">Читать</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-swiper__prev">
+                    <img src="images/icons/chevron-right.svg" alt="">
+                </div>
+
+                <div class="news-swiper__next">
+                    <img src="images/icons/chevron-right.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container py-4 footer">
+            <div class="row">
+                <div class="d-none d-md-block col-md-6 col-xl-3">
+                    <p class="h4">Меню</p>
+
+                    <div class="d-flex flex-column flex-md-row flex-wrap flex-wrap gap-4 mt-4">
+                        <a href="#" class="footer__link">Личный кабинет</a>
+                        <a href="#" class="footer__link">Полезная информация</a>
+                        <a href="#" class="footer__link">Контакты и график работы</a>
+                        <a href="#" class="footer__link">Обращение на подключение дома</a>
+                        <a href="#" class="footer__link">Наши дома</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mt-4 mt-md-0">
+                    <p class="h4">Контакты</p>
+                    <p class="h6 mt-4 text-secondary">Call-центр</p>
+                    <p class="h4">8(3452)500-614 </p>
+                    <p class="h6 mt-4 text-secondary">Аварийно-диспетчерская служба</p>
+                    <p class="h4">8(3452)500-614 </p>
+                </div>
+            </div>
+
+            <div class="mt-4 d-flex flex-column flex-md-row align-items-md-center">
+                <img class="footer__logo" src="images/footer-logo.png" alt="">
+                <p class="text-secondary fs-6 mt-4 mt-md-0">
+                    Если у Вас есть дополнительные вопросы или предложения относительно положения о защите персональных
+                    данных или Вы хотите удалить свои персональные данные с веб-сайта,то в любое время связаться с
+                    Меридиан
+                    Сервис можно по следующему электронному адресу: meridian_cervis@mail.ru
+                </p>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mt-4">
+                <a href="#" class="footer__bottom-link">Использование материалов сайта без согласия правообладателя
+                    запрещено. </a>
+                <a href="#" class="footer__bottom-link mt-4 mt-md-0">Положение о защите персональных данных</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+        const articlesSwiper = new Swiper('.articles-swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 24,
+
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                }
+            },
+            navigation: {
+                nextEl: '.articles-swiper__next',
+                prevEl: '.articles-swiper__prev',
+            },
+        });
+        const newsSwiper = new Swiper('.news-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                }
+            },
+            navigation: {
+                nextEl: '.news-swiper__next',
+                prevEl: '.news-swiper__prev',
+            },
+        });
+
+        setTimeout(() => {
+            articlesSwiper.navigation.update()
+            newsSwiper.navigation.update()
+        }, 100)
+    </script>
+</body>
+
+</html>
